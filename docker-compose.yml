@@ -1,0 +1,67 @@
+version: '3.7'
+
+services:
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: digitalocean.com/php
+    container_name: php
+    restart: unless-stopped
+    tty: true
+    environment:
+      SERVICE_NAME: app
+      SERVICE_TAGS: dev
+    working_dir: /var/www
+    volumes:
+      - ./:/var/www
+    networks:
+      - app-network
+
+  webserver:
+    image: nginx:1.19-alpine
+    container_name: nginx
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./:/var/www
+      - ./nginx:/etc/nginx/conf.d
+    networks:
+      - app-network
+
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    command: --innodb-use-native-aio=0
+    ports:
+      - "3306:3306"
+    volumes:
+      - .docker/dbdata:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: markpres
+      MYSQL_ROOT_PASSWORD: root
+    networks:
+      - app-network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    restart: always
+    links:
+      - mysql
+    ports:
+      - "8081:80"
+    environment:
+      - PMA_ARBITRARY=1
+    volumes:
+      - .docker/dbdata:/var/lib/mysql
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
