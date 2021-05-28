@@ -1,0 +1,10 @@
+## Comandos para rodar o projeto
+
+composer install --no-scripts
+cp .env.example .env
+php artisan key:generate
+php artisan serve
+
+## Comando para rodar a migration da base de dados
+
+php artisan migrate --seed
