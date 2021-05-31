@@ -26,7 +26,7 @@ Crie uma copia dele e renomeie para "markpres.conf" e altere a linha 13:
 De
 --» root /var/www/app;
 Para
---» root /var/www/public/MarkPress/public;
+--» root /var/www/MarkPress/public;
 ```
 ## Comandos para preparar o sistema:
 Execute o laradock e abra o CLI workspace no docker<br>
