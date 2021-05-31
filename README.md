@@ -24,6 +24,7 @@ Dentro da Pasta "laradock" busque o arquivo "app.conf.example" na pasta do NGINX
 ```
 Crie uma copia dele e renomeie para "markpres.conf" e altere a linha 13:
 ```
+De
 --» root /var/www/app;
 Para
 --» root /var/www/public/MarkPress/public;
