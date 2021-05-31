@@ -10,7 +10,6 @@ Primeiramente tenha certeza de que o projeto esteja na mesma pasta onde o larado
 │   ├── public
 │   │   └── MarkPress
 ```
-Execute o laradock e abra o CLI workspace no docker<br>
 
 ## Configuração do NGINX:
 Dentro da Pasta "laradock" busque o arquivo "app.conf.example" na pasta do NGINX:
@@ -30,6 +29,7 @@ Para
 --» root /var/www/public/MarkPress/public;
 ```
 ## Comandos para preparar o sistema:
+Execute o laradock e abra o CLI workspace no docker<br>
 Navegue para a pasta do MarkPress com e execute os seguintes comandos para instalar as dependências do projeto e as dependências de NPM:<br>
 ```
 --» composer install
