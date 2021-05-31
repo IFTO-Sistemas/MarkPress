@@ -45,7 +45,7 @@ E Gere uma chave de criptografia de aplicativo e faça o migrate no banco de dad
 --» php artisan migrate
 ```
 ## OBS:
-* Caso o comando "php artisan migrate" apresente erro abra no navegador o endereço [localhost:8081](localhost:8081) faça o login com o acesso:
+* Caso o comando "php artisan migrate" apresente erro abra no navegador o endereço [localhost:8081](http://localhost:8081) faça o login com o acesso:
 ```
 Servidor: mysql
 Usuário: root
