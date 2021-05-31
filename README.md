@@ -1,26 +1,44 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<p align="center"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="200"><img src="https://www.mundodocker.com.br/wp-content/uploads/2015/06/docker_facebook_share.png" width="100"></p>
 
 # Como executar o projeto
+## Estrutura do projeto:
 
-No momento temos duas formas de rodar o projeto sendo elas com o docker ou com o próprio composer instalado na sua máquina:
+Primeiramente tenha certeza de que o projeto esteja na mesma pasta onde o laradock está:<br>
+```
+├── Pasta raiz
+│   ├── laradock
+│   ├── public
+│   │   └── MarkPress
+```
+Execute o laradock e abra o CLI workspace no docker<br>
+## Comandos para preparar o sistema:
+Navegue para a pasta do MarkPress com e execute os seguintes comandos para instalar as dependências do projeto e as dependências de NPM:<br>
+```
+--» composer install
+--» npm install
+```
+Tendo as dependências instaladas crie uma cópia do arquivo .env com o comando:<br>
+```
+--» cp .env.example .env
+```
+E Gere uma chave de criptografia de aplicativo e faça o migrate no banco de dados:
+```
+--» php artisan key:generate
+--» php artisan migrate
+```
+## OBS:
+* Caso o comando "php artisan migrate" apresente erro abra no navegador o endereço [localhost:8081](localhost:8081) faça o login com o acesso:
+```
+Servidor: mysql
+Usuário: root
+Senha: root
+```
+* E crie uma base de dados com o nome "markpres" e com o Agrupamento (Collation) "utf8mb4_unicode_ci" e execute o comando "php artisan migrate" novamente.<br>
 
-## Docker
-- Para rodar com o docker basta estar com o docker iniciado na sua máquina e digitar o comando "docker-compose up -d --build" no terminal para executar o projeto ou executar o arquivo "Docker_Start.bat".
-
-- Para encerrar o projeto rodando em docker basta usar o comando "docker-compose down" ou executar o arquivo "Docker_Close.bat" para encerrar os containers.
-
-- Após rodar os containers basta acessar o seu [Localhost](Localhost) para verificar se o projeto está rodando 
-
-## Composer
-
-* Por segurança para executar o projeto com o Composer é feito somente por terminal para evitar falhas.
-
-* Os comandos necessários para executar o projeto estão no arquivo Comandos.txt
-* Basta seguir os comandos para que oprojeto rode.
-
-# Como executar as migrations
-## Docker
-- Abrindo o CLI do container **PHP** basta digitar "php artisan migrate" e pronto as migrations serão executadas.
-
-## Composer
-- No terminal basta digitar "php artisan migrate" para as migrations serem executadas.
+## Executando o projeto:
+Finalizando com os comandos para executar os serviços do VUE.js
+```
+--» npm run dev
+OU
+--» npm run watch
+```
