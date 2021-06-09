@@ -14,13 +14,19 @@ class CreateLecturesTable extends Migration
     public function up()
     {
         Schema::create('lectures', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
+            $table->bigIncrements('id');
+            $table->unsignedBigInteger('author');
+            $table->string('slug');
+            $table->string('title');
             $table->string('description');
-            $table->string('informations');
-            $table->string('status');
-            $table->foreignId('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->text('content');
+            $table->json('information')->nullable();
+            $table->date('date');
+            $table->time('time');
+            $table->string('status')->nullable();
             $table->timestamps();
+
+            $table->foreign('author')->references('id')->on('users')->onDelete('CASCADE');
         });
     }
 
@@ -31,8 +37,6 @@ class CreateLecturesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('lectures', function (Blueprint $table) {
-        $table->dropForeign(['users_id']);
-        });
+        Schema::dropIfExists('lectures');
     }
 }
