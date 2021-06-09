@@ -1,4 +1,4 @@
-<form action="{{ route('events.create') }}" method="post">
+<form action="{{ route('events.create') }}" method="post" enctype="multipart/form-data">
     @csrf
 
     <input type="text" id='title' name='title' placeholder="title">

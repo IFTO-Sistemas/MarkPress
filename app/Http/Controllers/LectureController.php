@@ -12,6 +12,7 @@ class LectureController extends Controller
     }
 
     public function create(Request $request){
+        dd($request);
         $lectures = new Lecture();
         $lectures->title = $request->title;
         $lectures->description = $request->description;
