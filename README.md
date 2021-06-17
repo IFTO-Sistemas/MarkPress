@@ -44,6 +44,27 @@ E Gere uma chave de criptografia de aplicativo e faça o migrate no banco de dad
 --» php artisan key:generate
 --» php artisan migrate
 ```
+
+## Preparar Voyager
+Execute para rodar corretamente o voyager na máquina:<br>
+```
+--» artisan db:seed --class=VoyagerDatabaseSeeder
+--» php artisan hook:setup
+--» php artisan storage:link
+--» composer dump-autoload
+```
+
+Adicione no arquivo de rota do laravel "routes/web.php".
+```
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
+```
+Por fim crie um usuário para entrar no Voyager.
+```
+php artisan voyager:admin seuemail@email.com --create
+```
+Documentação do Voyager: https://voyager-docs.devdojo.com/
 ## OBS:
 * Caso o comando "php artisan migrate" apresente erro abra no navegador o endereço [localhost:8081](http://localhost:8081) faça o login com o acesso:
 ```
