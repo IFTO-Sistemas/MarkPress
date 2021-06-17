@@ -104,13 +104,13 @@ return [
         /*
          * Select default language
          */
-        'default' => 'en',
+        'default' => 'pt_bt',
 
         /*
          * Select languages that are supported.
          */
         'locales' => [
-            'en',
+            'pt_bt',
             //'pt',
         ],
     ],
@@ -181,7 +181,7 @@ return [
     |
     */
 
-    'primary_color' => '#22A7F0',
+    'primary_color' => '#1AA7B5',
 
     'show_dev_tips' => true, // Show development tip "How To Use:" in Menu and Settings
 
@@ -226,6 +226,7 @@ return [
         // 'allowed_mimetypes' => '*', //All types can be uploaded
         'allowed_mimetypes' => [
           'image/jpeg',
+          'image/jpg',
           'image/png',
           'image/gif',
           'image/bmp',
