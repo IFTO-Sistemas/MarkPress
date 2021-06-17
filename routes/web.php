@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\{
     LectureController,
-    HomeController
+    EventController
 };
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -15,11 +15,7 @@ Route::middleware(['auth'])->group(function(){
 
 });
 
-
-// Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::get('/', function () {
-    return view('.home.welcome');
-})->name('Home');
+Route::get('/', [EventController::class, 'index'])->name('Home');
 
 Auth::routes();
 
