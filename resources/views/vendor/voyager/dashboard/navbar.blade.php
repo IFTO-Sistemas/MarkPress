@@ -28,7 +28,7 @@
                 @endphp
                 @if ($loop->last)
                 <li>{{ ucfirst(urldecode($segment)) }}</li>
-                @else
+                @else 
                 <li>
                     <a href="{{ $url }}">{{ ucfirst(urldecode($segment)) }}</a>
                 </li>

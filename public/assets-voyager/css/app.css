@@ -3213,7 +3213,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 .btn-default {
-   color: #333;
+   color: white;
    background-color: #fff;
    border-color: #ccc
 }
@@ -3225,8 +3225,8 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 .btn-default:hover {
-   color: #333;
-   background-color: #e6e5e5;
+   color: #1AA7B5;
+   background-color: #E9E5E5 ;
    border-color: #adadad
 }
 
@@ -3709,7 +3709,7 @@ tbody.collapse.in {
 }
 
 .btn-group .btn+.btn, .btn-group .btn+.btn-group, .btn-group .btn-group+.btn, .btn-group .btn-group+.btn-group {
-   margin-left: -1px
+   margin-left: 3px
 }
 
 .btn-toolbar {
@@ -15784,7 +15784,8 @@ a, a:hover {
 .app-container {
    min-height: 100%;
    position: relative;
-   background: #f9f9f9;
+   /* cor anterior background: #f9f9f9; */
+   background: #E9E5E5;
    padding-bottom: 30px
 }
 
@@ -18629,7 +18630,7 @@ button.input-search-close {
 }
 
 .btn-default.disabled, .btn-default.disabled.active, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled:focus, .btn-default.disabled:hover, .btn-default[disabled], .btn-default[disabled].active, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled]:focus, .btn-default[disabled]:hover, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default.active, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:hover {
-   color: #76838f;
+   color: #4F4F4F;
    background-color: #f3f7f9;
    border-color: #f3f7f9
 }
@@ -23748,18 +23749,18 @@ dt, kbd kbd {
 }
 
 #toolbar .btn-group .btn {
-   border-radius: 0
+   border-radius: 50px;
 }
 
-#toolbar .btn-group .btn:first-child {
+/* #toolbar .btn-group .btn:first-child {
    border-top-left-radius: 2px;
    border-bottom-left-radius: 2px
-}
+} */
 
-#toolbar .btn-group .btn:last-child {
+/* #toolbar .btn-group .btn:last-child {
    border-top-right-radius: 2px;
    border-bottom-right-radius: 2px
-}
+} */
 
 #toolbar .btn-group .btn.btn-default:last-child, #toolbar .btn-group .btn.btn-default:nth-child(2) {
    border-left: 1px solid #cbcbcd
@@ -25067,7 +25068,8 @@ body, html {
 }
 
 .voyager .btn.btn-default {
-   background-color: #f0f0f0;
+   /* cor anterior background-color: #f0f0f0; */
+   background-color: #1AA7B5;
    border-color: #eaeaea
 }
 
@@ -26316,14 +26318,14 @@ p#the_plugin_name {
    position: relative;
    top: 2px;
    border: 1px solid #f9f9f9;
-   font-size: 12px;
+   font-size: 14px;
    padding: 4px 15px 4px 10px
 }
 
 .breadcrumb a {
    color: #22a7f0;
    font-family: Open Sans;
-   font-weight: 400
+   font-weight: 600
 }
 
 .breadcrumb i {
@@ -26412,8 +26414,10 @@ p#the_plugin_name {
    margin-bottom: 22px;
    background-color: #fff;
    border: 1px solid transparent;
-   border-radius: 4px;
-   box-shadow: 0 2px 10px rgba(0, 0, 0, .05)
+   border-radius: 20px;
+   box-shadow: 2px 3px 12px 0px rgba(79,79,79,0.75);
+-webkit-box-shadow: 2px 3px 12px 0px rgba(79,79,79,0.75);
+-moz-box-shadow: 2px 3px 12px 0px rgba(79,79,79,0.75);
 }
 
 .btn.btn-primary {
@@ -26525,7 +26529,7 @@ p#the_plugin_name {
    padding: 6px 15px;
    font-size: 14px;
    line-height: 1.57142857;
-   border-radius: 3px;
+   border-radius: 50px;
    transition: border .2s linear, color .2s linear, width .2s linear, background-color .2s linear;
    -webkit-font-smoothing: subpixel-antialiased
 }
