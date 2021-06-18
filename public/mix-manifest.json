@@ -1,4 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/images/apple-touch-icon.png": "/images/apple-touch-icon.png",
+    "/images/favicon.ico": "/images/favicon.ico",
+    "/images/logo.png": "/images/logo.png"
 }

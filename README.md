@@ -65,6 +65,10 @@ Por fim crie um usuário para entrar no Voyager.
 php artisan voyager:admin seuemail@email.com --create
 ```
 Documentação do Voyager: https://voyager-docs.devdojo.com/
+
+##Voyager Frontend
+Documentação do Voyager-Frontend: https://github.com/pvtl/voyager-frontend
+
 ## OBS:
 * Caso o comando "php artisan migrate" apresente erro abra no navegador o endereço [localhost:8081](http://localhost:8081) faça o login com o acesso:
 ```
