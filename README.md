@@ -60,7 +60,9 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 ```
-Por fim crie um usuário para entrar no Voyager.
+Por fim crie um usuário para entrar no Voyager ou acesse email e senha padrão.
+*email:* *admin@admin.com*
+*senha:* *password*
 ```
 php artisan voyager:admin seuemail@email.com --create
 ```
