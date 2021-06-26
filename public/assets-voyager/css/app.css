@@ -3217,8 +3217,9 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-default {
    color: white;
-   background-color: #fff;
-   border-color: #ccc
+   background-color: #1AA7B5;
+   border-color: #ccc;
+   border-radius: 20px;
 }
 
 .btn-default.focus, .btn-default:focus {
@@ -18628,10 +18629,10 @@ button.input-search-close {
 }
 
 .btn-group-sm>.btn, .btn-sm {
-   padding: 6px 13px;
+   padding: 6px 15px;
    font-size: 12px;
    line-height: 1.5;
-   border-radius: 2px
+   border-radius: 20px
 }
 
 .btn-group-xs>.btn, .btn-xs {
