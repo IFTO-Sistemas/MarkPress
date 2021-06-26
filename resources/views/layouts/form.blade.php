@@ -27,6 +27,7 @@
 
 </head>
 <body>
+    @yield('navbar')
     @yield('init')
     @yield('footer')
     <!-- MDB -->

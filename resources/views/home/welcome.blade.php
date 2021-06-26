@@ -104,7 +104,7 @@
                                     <div class="d-flex justify-content-center align-items-center h-100">
                                         <div class="text-white text-center">
                                             <h2>{{ $event->name }}</h2>
-                                            <a class="btn btn-outline-light btn-lg m-2" href="{{ route('formlecture') }}"
+                                            <a class="btn btn-outline-light btn-lg m-2" href="/lecture/{{$event->id}}"
                                                 role="button">Mais Informações</a>
                                         </div>
                                     </div>
@@ -118,7 +118,7 @@
                                 <div class="d-flex justify-content-center align-items-center h-100">
                                     <div class="text-white text-center">
                                         <h2>{{ $event->name }}</h2>
-                                        <a class="btn btn-outline-light btn-lg m-2" href="{{ route('formlecture') }}"
+                                        <a class="btn btn-outline-light btn-lg m-2" href="/lecture/{{$event->id}}"
                                             role="button">Mais Informações</a>
                                     </div>
                                 </div>
@@ -205,7 +205,7 @@
 
                     <hr class="my-5" />
 
-                    <!--Section: Content-->
+                    {{-- <!--Section: Content-->
                     <section class="text-center" id=palestras>
                         <h4 class="mb-5"><strong>Palestras Próximas</strong></h4>
                         <!-- Carousel wrapper -->
@@ -388,7 +388,7 @@
                     </section>
                     <!--Section: Content-->
 
-                    <hr class="my-5" />
+                    <hr class="my-5" /> --}}
 
                     <!--Section: Content-->
                     <section class="text-center" id=palestras>
@@ -401,7 +401,7 @@
                                     <div class="card">
                                         <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                                             <img src="/img/icon.png" class="img-fluid" />
-                                            <a href="{{ route('formlecture') }}">
+                                            <a href="/lecture/{{$event->id}}">
                                                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                                             </a>
                                         </div>
@@ -410,19 +410,21 @@
                                             <p class="card-text">
                                                 Descrição
                                             </p>
-                                            <a href="{{ route('formlecture') }}" class="btn btn-primary">Participar</a>
+                                            <a href="/lecture/{{$event->id}}" class="btn btn-primary">Participar</a>
                                         </div>
                                     </div>
                                 </div>
                                 @if (($loop->index + 1) % 3 == 0)
                                     @if ($loop->first)
 
+                                    @elseif ($loop->last)
+                                        @break
                                     @else
                                         <hr class="my-5" />
                                     @endif
                                 @endif
                             @empty
-                                <h1>Nehuma palestra encontrada com o nome {{ $result }}</h1>
+                                <h1>Nehuma palestra Disponível</h1>
                             @endforelse
                     </section>
                     <!--Section: Content-->
