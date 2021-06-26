@@ -3,7 +3,9 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\{
-    EventController
+    EventController,
+    PostsController,
+    FormsLectureController
 };
 use Illuminate\Support\Facades\Auth;
 
@@ -19,6 +21,10 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', [EventController::class, 'index'])->name('Home');
+
+Route::get('/search', [PostsController::class, 'search'])->name('search');
+
+Route::get('/lecture', [FormsLectureController::class, 'formlecture'])->name('formlecture');
 
 Auth::routes();
 

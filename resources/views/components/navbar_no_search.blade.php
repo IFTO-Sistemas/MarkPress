@@ -16,25 +16,16 @@
             <div class="collapse navbar-collapse" id="navbarExample01">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="http://localhost/#inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#palestras" rel="nofollow">Palestras</a>
+                        <a class="nav-link" href="http://localhost/#palestras" rel="nofollow">Palestras</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#final">Contatos</a>
+                        <a class="nav-link" href="http://localhost/#final">Contatos</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav d-flex flex-row">
-                    <li class="nav-item me-3 me-lg-0">
-                        <div class="input-group">
-                            <div class="form-outline me-5">
-                                <form action="{{ route('search') }}" method="GET">
-                                    <input type="search" name="search" style="background-color: #F0F8FF;" class="form-control rounded" placeholder="Pesquisar..." aria-label="Search" aria-describedby="search-addon" required/>
-                                </form>
-                            </div>
-                        </div>
-                    </li>
                     <!-- login/cadastrar -->
                     @guest
                         @if (Route::has('login'))

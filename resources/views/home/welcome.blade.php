@@ -1,4 +1,4 @@
-@extends('layouts.main.main')
+@extends('layouts.main')
 
 
 
@@ -82,6 +82,9 @@
                 @forelse ($events as $event)
                     @if ($loop->first)
                         <li data-mdb-target="#introCarousel" data-mdb-slide-to="{{ $loop->index }}" class="active"></li>
+                    
+                    @elseif ($loop->index == 6)
+                        @break
                     @else
                         <li data-mdb-target="#introCarousel" data-mdb-slide-to="{{ $loop->index }}"></li>
                     @endif
@@ -109,6 +112,8 @@
                                 </div>
                             </div>
                         </div>
+                    @elseif ($loop->index == 6)
+                        @break
                     @else
                         <div class="carousel-item carousel-item-J">
                             <div class="mask" style="background: rgba(0, 0, 0, 0.0);">
