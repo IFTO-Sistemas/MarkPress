@@ -1,16 +1,9 @@
 @extends('layouts.form')
 
 
-
-
-
-
-
-
-
-
-
 @section('init')
+
+
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -58,41 +51,29 @@
 
             <hr class="my-2" />
 
-            <div class="mb-4 rounded-3">
-                <div class="container-fluid py-2">
-
-                    <div class="row justify-content-md-center">
-                        <div class=" display-5 fw-bold col-md-auto">
-                            <h1>Preencha o formulario para Participar da Palestra</h1>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-8">
-                            <label class="sr-only" for="inlineFormInputGroup">CPF</label>
-                            <div class="input-group mb-2 py-2">
-                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="CPF"
-                                    required />
+            @auth
+                <div class="mb-4 rounded-3">
+                    <div class="container-fluid py-2">
+                        <div class="row justify-content-md-center my-3">
+                            <div class="col-md-auto">
+                                <button type="submit" class="btn btn-primary mb-2">Participar</button>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-8">
-                            <label class="sr-only" for="inlineFormInputGroup">Celular</label>
-                            <div class="input-group mb-2">
-                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Celular"
-                                    required />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-md-center my-3">
-                        <div class="col-md-auto">
-                            <button type="submit" class="btn btn-primary mb-2">Participar</button>
                         </div>
                     </div>
                 </div>
-            </div>
+            @endauth
+
+            @guest
+                <div class="mb-4 rounded-3">
+                    <div class="container-fluid py-2">
+                        <div class="row justify-content-md-center my-3">
+                            <div class="col-md-auto">
+                                <h1>Para se cadastrar no evento efetue o login!</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endguest
 
         </div>
     </main>
@@ -110,7 +91,7 @@
 
 @section('footer')
 
-    @include('components.footer')
+@include('components.footer')
 
 @endsection
 
