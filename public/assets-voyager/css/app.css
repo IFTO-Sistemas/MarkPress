@@ -212,7 +212,9 @@ td, th {
       page-break-inside: avoid
    }
    thead {
-      display: table-header-group
+      /* display: table-header-group; */
+      font-weight: 100;
+      text-align: left;
    }
    img, tr {
       page-break-inside: avoid
@@ -2564,8 +2566,8 @@ caption, th {
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
    padding: 8px;
    line-height: 1.42857143;
-   vertical-align: top;
-   border-top: 1px solid #ddd
+   /* vertical-align: top; */
+   /* border-top: 1px solid #ddd */
 }
 
 .table>thead>tr>th {
@@ -2705,7 +2707,8 @@ input[type=search] {
    box-sizing: border-box;
    -webkit-appearance: none;
    -moz-appearance: none;
-   appearance: none
+   appearance: none;
+   border-radius: 10px;
 }
 
 input[type=checkbox], input[type=radio] {
@@ -3226,7 +3229,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-default:hover {
    color: #1AA7B5;
-   background-color: #E9E5E5 ;
+   background-color: #E9E5E5;
    border-color: #adadad
 }
 
@@ -5570,8 +5573,8 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:focus, a.list-g
 }
 
 .panel>.panel-collapse>.table caption, .panel>.table-responsive>.table caption, .panel>.table caption {
-   padding-right: 15px;
-   padding-left: 15px
+   /* padding-right: 15px; */
+   /* padding-left: 15px */
 }
 
 .panel>.table-responsive:first-child>.table:first-child, .panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child, .panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child, .panel>.table:first-child, .panel>.table:first-child>tbody:first-child>tr:first-child, .panel>.table:first-child>thead:first-child>tr:first-child {
@@ -6533,7 +6536,6 @@ button.close {
    display: block;
    margin-left: auto;
    margin-right: auto;
-  
 }
 
 .center-logo {
@@ -6544,7 +6546,6 @@ button.close {
    height: 75px;
    width: 75px;
    margin-bottom: -70px;
-   
 }
 
 .pull-right {
@@ -10354,10 +10355,36 @@ table.dataTable thead .sorting_desc_disabled {
    background-image: url(../images/sort_desc_disabled.png)
 }
 
-table.dataTable tbody tr {
-   background-color: #fff
+table.dataTable tr {
+   /* background-color: #fff; */
 }
 
+
+table { 
+   border-collapse: separate; 
+   border-spacing: 0 10px; 
+   margin-top: -10px; /* correct offset on first border spacing if desired */
+}
+td {
+   padding: 10px;
+   /* background-color: cyan; */
+   font-family: roboto;
+   color: black;
+}
+td:first-child {
+   /* border-left-style: solid; */
+   border-top-left-radius: 20px; 
+   border-bottom-left-radius: 20px;
+}
+td:last-child {
+   /* border-right-style: solid; */
+   border-bottom-right-radius: 20px; 
+   border-top-right-radius: 20px; 
+}
+
+.odd {
+   background-color: #cdcbcc;
+}
 table.dataTable tbody tr.selected {
    background-color: #b0bed9
 }
@@ -10393,6 +10420,9 @@ table.dataTable.display tbody tr.odd, table.dataTable.stripe tbody tr.odd {
 
 table.dataTable.display tbody tr.odd.selected, table.dataTable.stripe tbody tr.odd.selected {
    background-color: #acbad4
+}
+tr {
+   border-radius: 20px;
 }
 
 table.dataTable.display tbody tr:hover, table.dataTable.hover tbody tr:hover {
@@ -10492,7 +10522,7 @@ table.dataTable.nowrap td, table.dataTable.nowrap th {
 }
 
 table.dataTable.compact thead td, table.dataTable.compact thead th {
-   padding: 4px 17px 4px 4px
+   padding: 4px 17px 4px 4px;
 }
 
 table.dataTable.compact tbody td, table.dataTable.compact tbody th, table.dataTable.compact tfoot td, table.dataTable.compact tfoot th {
@@ -10821,7 +10851,7 @@ table.dataTable {
    clear: both;
    margin-top: 6px!important;
    margin-bottom: 6px!important;
-   max-width: none!important
+   max-width: none!important;
 }
 
 table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_asc_disabled, table.dataTable thead .sorting_desc, table.dataTable thead .sorting_desc_disabled {
@@ -23682,7 +23712,7 @@ dt, kbd kbd {
 }
 
 #dataTable .bread-actions .btn, .actions a.btn {
-   padding: 5px 10px;
+   padding: 5px 12px;
    font-size: 12px
 }
 
@@ -24188,7 +24218,7 @@ body, html {
    padding: 0;
    margin: 0;
    height: 100%;
-   font-family: Open Sans, sans-serif;
+   font-family: Roboto;
    font-size: 14px;
    line-height: 1.57142857;
    color: #76838f;
@@ -25078,11 +25108,16 @@ body, html {
 }
 
 .voyager .btn.btn-success {
-   background: #2ecc71;
+   /* background: #2ecc71;
    color: #fff;
    border: 0;
    border-radius: 3px;
-   opacity: .9
+   opacity: .9 */
+   background: #1AA7B5;
+   color: #fff;
+   border: 0;
+   border-radius: 50px;
+   opacity: .9;
 }
 
 .voyager .btn.btn-success:hover {
@@ -25093,7 +25128,7 @@ body, html {
    background: #f39c12;
    color: #fff;
    border: 0;
-   border-radius: 3px;
+   /* border-radius: 3px; */
    opacity: .9
 }
 
@@ -25112,11 +25147,16 @@ body, html {
 }
 
 .voyager .btn.btn-danger {
-   background: #fa2a00;
+   /* background: #fa2a00;
    color: #fff;
    border: 0;
    border-radius: 3px;
-   opacity: .9
+   opacity: .9; */
+   background: #1AA7B5;
+   color: #fff;
+   border: 0;
+   border-radius: 50px;
+   opacity: .9;
 }
 
 .voyager .btn.btn-danger:hover {
@@ -26345,7 +26385,7 @@ p#the_plugin_name {
    color: #76838f;
    background-color: #fff;
    background-image: none;
-   border: 1px solid #e4eaec
+   border: 1px solid #cdcbcc
 }
 
 .form-control.focus, .form-control:focus {
@@ -26354,9 +26394,9 @@ p#the_plugin_name {
 }
 
 .input-group-sm>.form-control, .input-group-sm>.input-group-addon, .input-group-sm>.input-group-btn>.btn, .input-sm {
-   height: 32px;
+   height: 35px;
    padding: 6px 13px;
-   font-size: 12px;
+   font-size: 15px;
    line-height: 1.5
 }
 
@@ -26415,9 +26455,9 @@ p#the_plugin_name {
    background-color: #fff;
    border: 1px solid transparent;
    border-radius: 20px;
-   box-shadow: 2px 3px 12px 0px rgba(79,79,79,0.75);
--webkit-box-shadow: 2px 3px 12px 0px rgba(79,79,79,0.75);
--moz-box-shadow: 2px 3px 12px 0px rgba(79,79,79,0.75);
+   box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.76);
+-webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.76);
+-moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.76);
 }
 
 .btn.btn-primary {
@@ -26425,7 +26465,7 @@ p#the_plugin_name {
    opacity: .9;
    background: #22a7f0;
    border: 0;
-   border-radius: 3px
+   /* border-radius: 3px */
 }
 
 .btn.btn-primary:hover {
@@ -26526,7 +26566,7 @@ p#the_plugin_name {
 }
 
 .btn {
-   padding: 6px 15px;
+   padding: 7px 20px;
    font-size: 14px;
    line-height: 1.57142857;
    border-radius: 50px;

@@ -23,6 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->text('profile_photo')->nullable();
             $table->string('usr_type')->default('USR')->comment('ADM para administradores e USR para ususários');
+            $table->text('settings')->nullable()->default('{"locale":"pt_br"}');
             $table->rememberToken();
             $table->timestamps();
         });

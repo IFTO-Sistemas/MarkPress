@@ -15,7 +15,6 @@
         "laravel/framework": "^8.40",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.3",
-        "pvtl/voyager-frontend": "^1.0",
         "tcg/voyager": "^1.4"
     },
     "require-dev": {
