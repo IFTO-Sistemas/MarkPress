@@ -424,7 +424,7 @@
                                     @endif
                                 @endif
                             @empty
-                                <h1>Nehuma palestra encontrada com o nome {{ $result }}</h1>
+                                <h1>Nehuma palestra Disponível</h1>
                             @endforelse
                     </section>
                     <!--Section: Content-->
