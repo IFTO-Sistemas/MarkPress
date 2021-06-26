@@ -39,17 +39,17 @@
         }
 
         /* .carousel-item-J:nth-child(2) {
-                            background-image: url('img/background/bc.jpg');
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            background-position: center center;
-                        }
-                        .carousel-item-J:nth-child(3) {
-                            background-image: url('img/background/bc.jpg');
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            background-position: center center;
-                        } */
+                                background-image: url('img/background/bc.jpg');
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center center;
+                            }
+                            .carousel-item-J:nth-child(3) {
+                                background-image: url('img/background/bc.jpg');
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center center;
+                            } */
 
         /* Height for devices larger than 576px */
         @media (min-width: 992px) {
@@ -104,8 +104,8 @@
                                     <div class="d-flex justify-content-center align-items-center h-100">
                                         <div class="text-white text-center">
                                             <h2>{{ $event->name }}</h2>
-                                            <a class="btn btn-outline-light btn-lg m-2"
-                                                href="{{ route('formlecture') }}" role="button">Mais Informações</a>
+                                            <a class="btn btn-outline-light btn-lg m-2" href="{{ route('formlecture') }}"
+                                                role="button">Mais Informações</a>
                                         </div>
                                     </div>
                                 </div>
@@ -118,8 +118,8 @@
                                 <div class="d-flex justify-content-center align-items-center h-100">
                                     <div class="text-white text-center">
                                         <h2>{{ $event->name }}</h2>
-                                        <a class="btn btn-outline-light btn-lg m-2"
-                                            href="{{ route('formlecture') }}" role="button">Mais Informações</a>
+                                        <a class="btn btn-outline-light btn-lg m-2" href="{{ route('formlecture') }}"
+                                            role="button">Mais Informações</a>
                                     </div>
                                 </div>
                             </div>
@@ -172,8 +172,10 @@
                     <!--Section: Content-->
                     <section>
                         <div class="row">
-                            <form action="{{ route('search') }}" method="GET" class="form-inline justify-content-center" style="text-align: center;">
-                                <input class="form-control mr-sm-2 my-2 form-control form-control-lg" type="text" placeholder="Search" aria-label="Search" name="search" required/>
+                            <form action="{{ route('search') }}" method="GET" class="form-inline justify-content-center"
+                                style="text-align: center;">
+                                <input class="form-control mr-sm-2 my-2 form-control form-control-lg" type="text"
+                                    placeholder="Search" aria-label="Search" name="search" required />
                                 <button class="btn btn-primary btn-lg my-2 my-sm-0" type="submit">Search</button>
                             </form>
                         </div>
@@ -185,34 +187,6 @@
                     <!--Main layout-->
 
                 @endsection
-
-                <form action="{{ route('search') }}" method="GET">
-                    <input type="text" name="search" required/>
-                </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                 {{-- INICIO DA SEÇÃO PALESTRA --}}

@@ -1,6 +1,19 @@
 @extends('layouts.form')
 
 
+
+{{-- INICIO DA SEÇÃO DA NAVBAR --}}
+
+@section('navbar')
+
+    @include('components.navbar_search')
+
+@endsection
+
+{{-- FIM DA SEÇÃO DA NAVBAR --}}
+
+
+
 @section('init')
 
 
@@ -22,7 +35,7 @@
     </style>
 
     <main>
-        <div class="container py-4">
+        <div class="container py-5">
             <div class="p-5 mb-4 bg-light rounded-3">
                 <div class="container-fluid py-5">
                     <h1 class="display-5 fw-bold">Custom jumbotron</h1>
@@ -68,7 +81,7 @@
                     <div class="container-fluid py-2">
                         <div class="row justify-content-md-center my-3">
                             <div class="col-md-auto">
-                                <h1>Para se cadastrar no evento efetue o login!</h1>
+                                <h1>Para participar da palestra efetue o login!</h1>
                             </div>
                         </div>
                     </div>
@@ -78,11 +91,6 @@
         </div>
     </main>
 @endsection
-
-
-
-
-
 
 
 
