@@ -104,7 +104,7 @@
                                     <div class="d-flex justify-content-center align-items-center h-100">
                                         <div class="text-white text-center">
                                             <h2>{{ $event->name }}</h2>
-                                            <a class="btn btn-outline-light btn-lg m-2" href="{{ route('formlecture') }}"
+                                            <a class="btn btn-outline-light btn-lg m-2" href="/lecture/{{$event->id}}"
                                                 role="button">Mais Informações</a>
                                         </div>
                                     </div>
@@ -118,7 +118,7 @@
                                 <div class="d-flex justify-content-center align-items-center h-100">
                                     <div class="text-white text-center">
                                         <h2>{{ $event->name }}</h2>
-                                        <a class="btn btn-outline-light btn-lg m-2" href="{{ route('formlecture') }}"
+                                        <a class="btn btn-outline-light btn-lg m-2" href="/lecture/{{$event->id}}"
                                             role="button">Mais Informações</a>
                                     </div>
                                 </div>
@@ -204,7 +204,7 @@
                                     <div class="card">
                                         <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                                             <img src="/img/icon.png" class="img-fluid" />
-                                            <a href="{{ route('formlecture') }}">
+                                            <a href="/lecture/{{$event->id}}">
                                                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                                             </a>
                                         </div>
@@ -213,7 +213,7 @@
                                             <p class="card-text">
                                                 Descrição
                                             </p>
-                                            <a href="{{ route('formlecture') }}" class="btn btn-primary">Participar</a>
+                                            <a href="/lecture/{{$event->id}}" class="btn btn-primary">Participar</a>
                                         </div>
                                     </div>
                                 </div>
