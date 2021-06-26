@@ -29,10 +29,7 @@ class VoyagerDatabaseSeeder extends Seeder
             'role_id' => 1,
             'name'  => 'admin',
             'email' => 'admin@admin.com',
-            'cpf'   => '000.000.000-00',
-            'phone' => '(63)90000-0000',
             'password' => Hash::make('password'),
-            'settings' => '{"locale":"pt_br"}'
         ]);
     }
 }

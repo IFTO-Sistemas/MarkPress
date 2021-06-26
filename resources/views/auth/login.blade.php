@@ -77,16 +77,6 @@
             </div>
 
             <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input id="cpf"  class="form-control @error('cpf') is-invalid @enderror" name="cpf" value="{{ old('cpf') }}" required autocomplete="cpf" type="text" placeholder="CPF" onkeypress="$(this).mask('000.000.000-00');" />
-            </div>
-
-            <div class="input-field">
-              <i class="fas fa-phone"></i>
-              <input id="phone"  class="form-control @error('phone') is-invalid @enderror" name="phone" value="{{ old('phone') }}" required autocomplete="phone" type="text" type="tel" placeholder="Telefone" onkeypress="$(this).mask('(00) 0000-00009')" />
-            </div>
-
-            <div class="input-field">
               <i class="fas fa-lock"></i>
               <input placeholder="Senha" id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
             </div>
