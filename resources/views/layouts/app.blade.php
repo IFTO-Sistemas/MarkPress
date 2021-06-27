@@ -2,6 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
+    <link rel="stylesheet" href="{{url('css/teste.css')}}" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -156,6 +157,9 @@
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
                                 <li>
                                     <a class="dropdown-item" href="#">Meu perfil</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Meus eventos</a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="#">configuração</a>

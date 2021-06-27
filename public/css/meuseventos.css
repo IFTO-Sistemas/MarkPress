@@ -1,0 +1,75 @@
+*, *:before, *:abter {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 200px;
+}
+
+h1, p {
+	margin: 0 0 1em 0;
+}
+
+.media {
+	border: 2px solid #444;
+	padding: 40px;
+}
+
+.media>.title {
+	grid-area: title;
+}
+
+.media>.img {
+	grid-area: img;
+}
+
+.media>.content {
+	grid-area: bd;
+}
+
+.media>.botoes {
+	grid-area: bt;
+}
+
+.media {
+	display: grid;
+	grid-column-gap: 20px;
+	grid-template-areas: "img" "info-evento" "bd" "bt";
+}
+
+@media (min-width: 600px) {
+	.media>.media {
+		margin: 160px;
+		clear: both;
+	}
+	.media .img {
+		float: left;
+		margin: 0 10px 0 0;
+		width: 150px;
+	}
+	.media .info-evento {
+	position:relative;
+		float: center;
+	}
+	.media .botoes {
+		float: right;
+		padding: 55px;
+	}
+	@supports(display: grid) {
+		/* override */
+		.media>*, .media .img {
+			width: auto;
+			margin: 0;
+		}
+		.media:abter {
+			content: none;
+		}
+		.media {
+			display: grid;
+			grid-column-gap: 20px;
+			grid-template-columns: 150px 3fr;
+			grid-template-rows: auto 2fr auto;
+			grid-template-areas: "img info-evento bt" "img bd bt";
+		}
+	}
+}
