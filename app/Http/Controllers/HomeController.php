@@ -25,8 +25,12 @@ class HomeController extends Controller
     {
         return view('home');
     }
-    public function afericao()
+    public function meuseventos()
     {
         return view('meuseventos');
+    }
+    public function meuseventosencerrados()
+    {
+        return view('meuseventosencerrados');
     }
 }

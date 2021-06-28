@@ -19,9 +19,9 @@
                     <div class="d-flex justify-content-center align-items-center h-100">
                         <div class="text-white">
                             <h1 class="mb-3">Meus eventos</h1>
-                            <a class="btn btn-primary btn-lg m-2" href="#!" role="button" rel="nofollow"
+                            <a class="btn btn-primary btn-lg m-2" href="meuseventos" role="button" rel="nofollow"
                                 target="_blank">Ativos</a>
-                            <a class="btn btn-primary btn-lg m-2" href="#!" target="_blank" role="button">Encerrados</a>
+                            <a class="btn btn-primary btn-lg m-2" href="meuseventosencerrados" target="_blank" role="button">Encerrados</a>
                         </div>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
                         </button>
                         <button class="btn btn-info" type="button" data-toggle="modal" data-target="#cancelarpresenca">
                             <i class="fa fa-times-circle" aria-hidden="true">&nbsp;</i>
-                            Cancelar presença
+                           Cancelar inscrição
                         </button>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
                                 <button class="btn btn-info" type="button" data-toggle="modal"
                                     data-target="#cancelarpresenca">
                                     <i class="fa fa-times-circle" aria-hidden="true">&nbsp;</i>
-                                    Cancelar presença
+                                   Cancelar inscrição
                                 </button>
                             </div>
                         </div>
@@ -128,7 +128,7 @@
                                     <button class="btn btn-info" type="button" data-toggle="modal"
                                         data-target="#cancelarpresenca">
                                         <i class="fa fa-times-circle" aria-hidden="true">&nbsp;</i>
-                                        Cancelar presença
+                                       Cancelar inscrição
                                     </button>
                                 </div>
                             </div>
@@ -160,7 +160,7 @@
                                 <button class="btn btn-info" type="button" data-toggle="modal"
                                     data-target="#cancelarpresenca">
                                     <i class="fa fa-times-circle" aria-hidden="true">&nbsp;</i>
-                                    Cancelar presença
+                                   Cancelar inscrição
                                 </button>
                             </div>
                         </div>
@@ -193,7 +193,7 @@
                                     <button class="btn btn-info" type="button" data-toggle="modal"
                                         data-target="#cancelarpresenca">
                                         <i class="fa fa-times-circle" aria-hidden="true">&nbsp;</i>
-                                        Cancelar presença
+                                       Cancelar inscrição
                                     </button>
                                 </div>
 

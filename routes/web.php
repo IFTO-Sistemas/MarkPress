@@ -17,7 +17,8 @@ Route::middleware(['auth'])->group(function(){
 
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::get('/meuseventos', [HomeController::class, 'afericao'])->name('meuseventosativos');
+Route::get('/meuseventos', [HomeController::class, 'meuseventos'])->name('meuseventos');
+Route::get('/meuseventosencerrados', [HomeController::class, 'meuseventosencerrados'])->name('meuseventosencerrados');
 Route::get('/', function () {
     return view('welcome');
 });
