@@ -159,7 +159,7 @@
                                     <a class="dropdown-item" href="#">Meu perfil</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Meus eventos</a>
+                                    <a class="dropdown-item" href="meuseventos">Meus eventos</a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="#">configuração</a>

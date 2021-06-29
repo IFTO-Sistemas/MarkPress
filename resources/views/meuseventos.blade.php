@@ -14,14 +14,17 @@
     {{-- Status do evento --}}
     <section id=inicio>
         <header>
-            <div class="p-5 text-center bg-image" style="height: 300px;">
-                <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="p-5 text-center bg-image" style="  
+                    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+                    height: 300px;">
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.452);">
                     <div class="d-flex justify-content-center align-items-center h-100">
-                        <div class="text-white">
+                        <div class="text-white text-center">
                             <h1 class="mb-3">Meus eventos</h1>
                             <a class="btn btn-primary btn-lg m-2" href="meuseventos" role="button" rel="nofollow"
                                 target="_blank">Ativos</a>
-                            <a class="btn btn-primary btn-lg m-2" href="meuseventosencerrados" target="_blank" role="button">Encerrados</a>
+                            <a class="btn btn-primary btn-lg m-2" href="meuseventosencerrados" target="_blank"
+                                role="button">Encerrados</a>
                         </div>
                     </div>
                 </div>
@@ -30,7 +33,7 @@
     </section>
 
 
-    {{-- listagem de eventos ativos - prototipo de alta fidelidade 
+    {{-- listagem de eventos ativos - de acordo com o prototipo de alta fidelidade 
     <section class="text-left" style="margin: 60px 0px">
 
         <body>
@@ -88,15 +91,15 @@
                                     <a href="#!" class="card-text fa fa-link">&nbsp;Clique aqui para acessar</a>
                                     <br>
                                 </div>
-                                <button class="btn btn-warning" type="button" data-toggle="modal"
-                                    data-target="#validarpresenca">
-                                    <i class="fa fa-times-circle" aria-hidden="true">&nbsp;</i>
+                                <button class=" btn btn-warning" type="button" data-toggle="modal"
+                                    data-target="#validarpresenca" style="margin-top: 15px;>
+                                    <i class=" fa fa-times-circle" aria-hidden="true">&nbsp;</i>
                                     Validar presença
                                 </button>
                                 <button class="btn btn-info" type="button" data-toggle="modal"
-                                    data-target="#cancelarpresenca">
-                                    <i class="fa fa-times-circle" aria-hidden="true">&nbsp;</i>
-                                   Cancelar inscrição
+                                    data-target="#cancelarpresenca" style="margin-top: 15px;>
+                                    <i class=" fa fa-times-circle" aria-hidden="true">&nbsp;</i>
+                                    Cancelar inscrição
                                 </button>
                             </div>
                         </div>
@@ -120,15 +123,15 @@
                                     <br>
                                 </div>
                                 <div>
-                                    <button class="btn btn-warning" type="button" data-toggle="modal"
-                                        data-target="#validarpresenca">
-                                        <i class="fa fa-times-circle" aria-hidden="true">&nbsp;</i>
+                                    <button class=" btn btn-warning" type="button" data-toggle="modal"
+                                        data-target="#validarpresenca" style="margin-top: 15px;>
+                                            <i class=" fa fa-times-circle" aria-hidden="true">&nbsp;</i>
                                         Validar presença
                                     </button>
                                     <button class="btn btn-info" type="button" data-toggle="modal"
-                                        data-target="#cancelarpresenca">
-                                        <i class="fa fa-times-circle" aria-hidden="true">&nbsp;</i>
-                                       Cancelar inscrição
+                                        data-target="#cancelarpresenca" style="margin-top: 15px;>
+                                            <i class=" fa fa-times-circle" aria-hidden="true">&nbsp;</i>
+                                        Cancelar inscrição
                                     </button>
                                 </div>
                             </div>
@@ -152,15 +155,15 @@
                                     <a href="#!" class="card-text fa fa-link">&nbsp;Clique aqui para acessar</a>
                                     <br>
                                 </div>
-                                <button class="btn btn-warning" type="button" data-toggle="modal"
-                                    data-target="#validarpresenca">
-                                    <i class="fa fa-times-circle" aria-hidden="true">&nbsp;</i>
+                                <button class=" btn btn-warning" type="button" data-toggle="modal"
+                                    data-target="#validarpresenca" style="margin-top: 15px;>
+                                    <i class=" fa fa-times-circle" aria-hidden="true">&nbsp;</i>
                                     Validar presença
                                 </button>
                                 <button class="btn btn-info" type="button" data-toggle="modal"
-                                    data-target="#cancelarpresenca">
-                                    <i class="fa fa-times-circle" aria-hidden="true">&nbsp;</i>
-                                   Cancelar inscrição
+                                    data-target="#cancelarpresenca" style="margin-top: 15px;>
+                                    <i class=" fa fa-times-circle" aria-hidden="true">&nbsp;</i>
+                                    Cancelar inscrição
                                 </button>
                             </div>
                         </div>
