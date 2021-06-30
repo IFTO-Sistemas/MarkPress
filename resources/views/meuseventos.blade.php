@@ -15,16 +15,16 @@
     <section id=inicio>
         <header>
             <div class="p-5 text-center bg-image" style="  
-                    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
-                    height: 300px;">
+                                        background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+                                        height: 300px;">
                 <div class="mask" style="background-color: rgba(0, 0, 0, 0.452);">
                     <div class="d-flex justify-content-center align-items-center h-100">
                         <div class="text-white text-center">
                             <h1 class="mb-3">Meus eventos</h1>
                             <a class="btn btn-primary btn-lg m-2" href="meuseventos" role="button" rel="nofollow"
-                                target="_blank">Ativos</a>
-                            <a class="btn btn-primary btn-lg m-2" href="meuseventosencerrados" target="_blank"
-                                role="button">Encerrados</a>
+                                target="_blank" style="background-color: #1AA7B5">Ativos</a>
+                            <a class="btn btn-primary btn-lg m-2" href="meuseventosencerrados" target="_blank" role="button"
+                                style="background-color: #1AA7B5">Encerrados</a>
                         </div>
                     </div>
                 </div>
@@ -33,43 +33,7 @@
     </section>
 
 
-    {{-- listagem de eventos ativos - de acordo com o prototipo de alta fidelidade 
-    <section class="text-left" style="margin: 60px 0px">
-
-        <body>
-            <div class="container p-4 text-center">
-                <div class="d-flex justify-content-center align-items-center h-100" style="column-gap:100px">
-                    {{-- Imagem do evento 
-                    <div class="col-md-3 img">
-                        <img src="data:image/jpeg;base64,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"
-                            alt="Placeholder">
-                    </div>
-                    {{-- Informações do evento 
-                    <div class="col-md-6 info-evento" style="text-align:left">
-                        <h2 class="card-title title">Nome do evento</h2>
-                        <p class="card-text fa fa-calendar">&nbsp;dia tal do mês tal de 2021</p><br>
-                        <p class="card-text fa fa-map-marker">&nbsp;Local: Google Meet</p><br>
-                        <a href="#!" class="card-text fa fa-link">&nbsp;Clique aqui para acessar</a>
-                    </div>
-                    {{-- Botoes de validação 
-                    <div class="col-md-3 botoes">
-                        <button href="#!" class="btn btn-warning" type="button" data-toggle="modal"
-                            data-target="#validarpresenca">
-                            <i class="fa fa-check-circle" aria-hidden="true">&nbsp;</i>
-                            Validar presença
-                        </button>
-                        <button class="btn btn-info" type="button" data-toggle="modal" data-target="#cancelarpresenca">
-                            <i class="fa fa-times-circle" aria-hidden="true">&nbsp;</i>
-                           Cancelar inscrição
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </body>
-    </section>
-    {{-- Fim da listagem de ventos ativos --}}
-
-    {{-- Listagem de eventos ativos - template 02 --}}
+    {{-- Listagem de eventos ativos --}}
     <main class="mt-5">
         <div class="container">
             <section class="text-center" id=eventos>
@@ -91,16 +55,12 @@
                                     <a href="#!" class="card-text fa fa-link">&nbsp;Clique aqui para acessar</a>
                                     <br>
                                 </div>
-                                <button class=" btn btn-warning" type="button" data-toggle="modal"
-                                    data-target="#validarpresenca" style="margin-top: 15px;>
-                                    <i class=" fa fa-times-circle" aria-hidden="true">&nbsp;</i>
-                                    Validar presença
-                                </button>
-                                <button class="btn btn-info" type="button" data-toggle="modal"
-                                    data-target="#cancelarpresenca" style="margin-top: 15px;>
-                                    <i class=" fa fa-times-circle" aria-hidden="true">&nbsp;</i>
-                                    Cancelar inscrição
-                                </button>
+                                <a class="btn btn-warning" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"
+                                    style="margin-top: 15px; background-color: #1AA7B5"><i class="fa fa-check-circle"
+                                        aria-hidden="true"></i>&nbsp;Validar presença</a>
+                                <a class="btn btn-primary" data-mdb-toggle="modal" href="#exampleModalcancelar1"
+                                    role="button" style="margin-top: 15px; background-color: #4F4F4F"><i
+                                        class="fa fa-times-circle" aria-hidden="true"></i>&nbsp;Cancelar Inscrição</a>
                             </div>
                         </div>
                     </div>
@@ -123,16 +83,12 @@
                                     <br>
                                 </div>
                                 <div>
-                                    <button class=" btn btn-warning" type="button" data-toggle="modal"
-                                        data-target="#validarpresenca" style="margin-top: 15px;>
-                                            <i class=" fa fa-times-circle" aria-hidden="true">&nbsp;</i>
-                                        Validar presença
-                                    </button>
-                                    <button class="btn btn-info" type="button" data-toggle="modal"
-                                        data-target="#cancelarpresenca" style="margin-top: 15px;>
-                                            <i class=" fa fa-times-circle" aria-hidden="true">&nbsp;</i>
-                                        Cancelar inscrição
-                                    </button>
+                                    <a class="btn btn-warning" data-mdb-toggle="modal" href="#exampleModalToggle1"
+                                        role="button" style="margin-top: 15px; background-color: #1AA7B5"><i
+                                            class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;Validar presença</a>
+                                    <a class="btn btn-primary" data-mdb-toggle="modal" href="#exampleModalcancelar1"
+                                        role="button" style="margin-top: 15px; background-color: #4F4F4F"><i
+                                            class="fa fa-times-circle" aria-hidden="true"></i>&nbsp;Cancelar Inscrição</a>
                                 </div>
                             </div>
                         </div>
@@ -143,7 +99,7 @@
                             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                                 <img src="https://mdbootstrap.com/img/new/standard/nature/111.jpg" class="img-fluid" />
                                 <a href="#!">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                    <div class="mask" style="background-color:  rgba(251, 251, 251, 0.15);"></div>
                                 </a>
                             </div>
                             <div class="card-body">
@@ -155,16 +111,12 @@
                                     <a href="#!" class="card-text fa fa-link">&nbsp;Clique aqui para acessar</a>
                                     <br>
                                 </div>
-                                <button class=" btn btn-warning" type="button" data-toggle="modal"
-                                    data-target="#validarpresenca" style="margin-top: 15px;>
-                                    <i class=" fa fa-times-circle" aria-hidden="true">&nbsp;</i>
-                                    Validar presença
-                                </button>
-                                <button class="btn btn-info" type="button" data-toggle="modal"
-                                    data-target="#cancelarpresenca" style="margin-top: 15px;>
-                                    <i class=" fa fa-times-circle" aria-hidden="true">&nbsp;</i>
-                                    Cancelar inscrição
-                                </button>
+                                <a class="btn btn-warning" data-mdb-toggle="modal" href="#exampleModalToggle1" role="button"
+                                    style="margin-top: 15px; background-color: #1AA7B5"><i class="fa fa-check-circle"
+                                        aria-hidden="true"></i>&nbsp;Validar presença</a>
+                                <a class="btn btn-primary" data-mdb-toggle="modal" href="#exampleModalcancelar1"
+                                    role="button" style="margin-top: 15px; background-color: #4F4F4F"><i
+                                        class="fa fa-times-circle" aria-hidden="true"></i>&nbsp;Cancelar Inscrição</a>
                             </div>
                         </div>
                     </div>
@@ -172,7 +124,6 @@
             </section>
         </div>
     </main>
-    {{-- Fim da listagem de eventos ativos - template 02 --}}
 
 
     {{-- Listagem de eventos encerrados
@@ -205,78 +156,94 @@
                     </main>
                 </section> --}}
 
-    <!-- Modal validar presença-->
-    <div class="modal fade" id="validarpresenca" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <hr class="my-5" />
+    <!-- First modal validar dialog -->
+    <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel1"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-
                 <div class="modal-header">
-                    <h5 class="validacao">Área destinada a aferição de presenças!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <h5 class="modal-title" id="exampleModalToggleLabel1">Área destinada a aferição de presenças!</h5>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
                 </div>
-
                 <div class="modal-body">
                     <form>
                         <input type="text" class="form-control" id="validarpresenca" style="background-color: #F0F8FF;"
                             placeholder="Digite ou cole o código de validação aqui.">
                     </form>
                 </div>
-
-                <div class="card-body">
+                <div class="modal-footer">
                     <small> Atenção! Se o código digitado estiver fora do prazo nada será validado.</small>
-                    <button id="validarcodigo" type="button" class="btn btn-warning" data-toggle="modal"
-                        data-target="#confirmarvalidacao">
-                        <i class="fa fa-check-circle">&nbsp;</i>Validar
+                    <button class="btn btn-warning" data-mdb-target="#exampleModalToggle22" data-mdb-toggle="modal"
+                        data-mdb-dismiss="modal" style="background-color: #1AA7B5">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        Validar
                     </button>
-                    <button type="button" class="btn btn-info" data-dismiss="modal">
-                        <i class="fa fa-times-circle">&nbsp;</i>Fechar
-                    </button>
-
-
                 </div>
             </div>
         </div>
     </div>
 
-    {{-- modal confirmar validacao de presenca --}}
-    <div class="modal fade" id="confirmarvalidacao" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <hr class="my-5" />
+    <!-- Second modal validar dialog -->
+    <div class="modal fade" id="exampleModalToggle22" aria-hidden="true" aria-labelledby="exampleModalToggleLabel22"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3>Presença validada com sucesso!</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                    <h5 class="modal-title" id="exampleModalToggleLabel22">Sua presença foi validada com sucesso!</h5>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-mdb-dismiss="modal" data-dismiss="modal"
+                        aria-label="Close" style="background-color: #4F4F4F">
+                        <i class="fa fa-times-circle">&nbsp;</i>Fechar
                     </button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal cancelar presença-->
-    <div class="modal fade" id="cancelarpresenca" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <hr class="my-5" />
+
+
+
+    <!-- First modal cancelar dialog -->
+    <div class="modal fade" id="exampleModalcancelar1" aria-hidden="true" aria-labelledby="exampleModalcancelarLabel1"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalcancelarLabel1">Você deseja realmente cancelar sua inscrição?
+                    </h5>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
                 <div class="modal-footer">
-                    <h5 class="cancelamento">Você realmente deseja cancelar esta inscrição?</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-
-                    <div class="modal-body">
-                        <button id="validarcodigo" type="button" class="btn btn-warning">
-                            <i class="fa fa-check-circle">&nbsp;</i>Sim
+                    <button class="btn btn-warning" data-mdb-target="#exampleModalcancelar22" data-mdb-toggle="modal"
+                        data-mdb-dismiss="modal" style="background-color: #1AA7B5">
+                        <i class="fa fa-check-circle" aria-hidden="true""></i>
+                            Sim
                         </button>
-                        <button type="button" class="btn btn-info" data-dismiss="modal">
+                        <button type=" button" class="btn btn-info" data-mdb-dismiss="modal" data-dismiss="modal"
+                            aria-label="Close" style="background-color: #4F4F4F">
                             <i class="fa fa-times-circle">&nbsp;</i>Não
-                        </button>
-                    </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Second modal cancelar dialog -->
+    <div class="modal fade" id="exampleModalcancelar22" aria-hidden="true" aria-labelledby="exampleModalcancelarLabel22"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalcancelarLabel22">Sua inscrição foi cancelada com sucesso!</h5>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-mdb-dismiss="modal" data-dismiss="modal"
+                        aria-label="Close" style="background-color: #4F4F4F">
+                        <i class="fa fa-times-circle">&nbsp;</i>Fechar
+                    </button>
                 </div>
             </div>
         </div>
@@ -293,19 +260,19 @@
             <div class="text-center py-4 align-items-center">
                 <p>Follow MDB on social media</p>
                 <a href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" class="btn btn-primary m-1" role="button"
-                    rel="nofollow" target="_blank">
+                    rel="nofollow" target="_blank" style="background-color: #1AA7B5">
                     <i class="fab fa-youtube"></i>
                 </a>
                 <a href="https://www.facebook.com/mdbootstrap" class="btn btn-primary m-1" role="button" rel="nofollow"
-                    target="_blank">
+                    target="_blank" style="background-color: #1AA7B5">
                     <i class="fab fa-facebook-f"></i>
                 </a>
                 <a href="https://twitter.com/MDBootstrap" class="btn btn-primary m-1" role="button" rel="nofollow"
-                    target="_blank">
+                    target="_blank" style="background-color: #1AA7B5">
                     <i class="fab fa-twitter"></i>
                 </a>
                 <a href="https://github.com/mdbootstrap/mdb-ui-kit" class="btn btn-primary m-1" role="button" rel="nofollow"
-                    target="_blank">
+                    target="_blank" style="background-color: #1AA7B5">
                     <i class="fab fa-github"></i>
                 </a>
             </div>
