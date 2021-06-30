@@ -52,7 +52,7 @@
                         Webex Meet
                     </div>
                     <div class="col-md-auto">
-                        Palestrante: Xunior Gaymi P.
+                        Palestrante: Edivaldo Araujo Jr.
                     </div>
                     <div class="col-md-auto">
                         Contato: email@gmail.com
