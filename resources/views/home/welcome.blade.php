@@ -407,9 +407,6 @@
                                         </div>
                                         <div class="card-body">
                                             <h5 class="card-title">{{ $event->name }}</h5>
-                                            <p class="card-text">
-                                                Descrição
-                                            </p>
                                             <a href="/lecture/{{$event->id}}" class="btn btn-primary">Participar</a>
                                         </div>
                                     </div>
