@@ -4,9 +4,9 @@
       <hr class="m-0" />
 
       <div class="text-center py-4 align-items-center">
-        <p>Follow MDB on social media</p>
+        <p>Nos siga nas redes sociais</p>
         <a
-          href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA"
+          href="https://www.youtube.com/channel/UCs_n045yHUiC-CR2s8AjIwg"
           class="btn btn-primary m-1"
           role="button"
           rel="nofollow"
@@ -15,7 +15,7 @@
           <i class="fab fa-youtube"></i>
         </a>
         <a
-          href="https://www.facebook.com/mdbootstrap"
+          href="https://www.facebook.com/"
           class="btn btn-primary m-1"
           role="button"
           rel="nofollow"
@@ -24,7 +24,7 @@
           <i class="fab fa-facebook-f"></i>
         </a>
         <a
-          href="https://twitter.com/MDBootstrap"
+          href="https://twitter.com/"
           class="btn btn-primary m-1"
           role="button"
           rel="nofollow"
@@ -33,13 +33,22 @@
           <i class="fab fa-twitter"></i>
         </a>
         <a
-          href="https://github.com/mdbootstrap/mdb-ui-kit"
+          href="https://www.instagram.com/"
           class="btn btn-primary m-1"
           role="button"
           rel="nofollow"
           target="_blank"
         >
-          <i class="fab fa-github"></i>
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://web.telegram.org/"
+          class="btn btn-primary m-1"
+          role="button"
+          rel="nofollow"
+          target="_blank"
+        >
+          <i class="fab fa-telegram"></i>
         </a>
       </div>
 
